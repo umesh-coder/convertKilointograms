@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout"
+    android:paddingTop="100dp"
+
+    >
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert Kilo Into Grams"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_kilo"
+        android:hint="Enter Weight in Kilo"
+        android:textColorHint="@color/design_default_color_primary"
+        android:paddingTop="25dp"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:layout_below="@id/weight_kilo"
+        android:id="@+id/converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Convert Into Grams"
+        android:background="@color/design_default_color_primary"
+        android:paddingTop="5dp"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/converter"
+        android:text="Weight in Grams"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/grams"
+        android:paddingTop="5dp"
+        />
+
+
+
+</RelativeLayout>
