@@ -29,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
         convertintograms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                //that convert kilo into grams
                 convertintograms();
+
+
             }
         });
 
@@ -39,12 +43,17 @@ public class MainActivity extends AppCompatActivity {
     private void convertintograms() {
         float kilo=0,grams=0;
 
+        //1kg = 1000 grams
+
         kilo= Float.parseFloat(weightintkilo.getText().toString());
 
 //        Toast.makeText(this,""+weightintkilo.getText(),Toast.LENGTH_LONG).show();
 
+        //calculate the grams
         grams=kilo*1000;
 
+
+//set the text
         gramas.setText(""+grams+" grams");
 
 
